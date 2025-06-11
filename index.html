@@ -1,154 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astik Dwivedi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="header">
-        <div class="container" id="Home1">
-            <nav>
-                <img src="static/images/kali.png" class="logo">
-                <ul>
-                    <li><a href="#Home1">Home</a></li>
-                    <li><a href="#container2">About</a></li>
-                    <li><a href="ASTIK-DWIVEDI_resume[1].pdf">Resume</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <img src="static/images/345.jpg" alt="image" width="300px" height="400px" id="personal"></alt>
 
-
-            <div class="header-text">
-                <p>Hi, I am <span>Astik</span><br>I am a Frontend Developer<br>aiming to create dynamic <br>and user friendly<br>websites.</p>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="ASTIK-DWIVEDI_resume[1].pdf">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <!--What I have done so far-->
-    
-    <div class="experiance">
-        <h1 id="place">What I have done so far</h1>
-        <p id="not">I have successfully completed my Java certification.<br>You can find the certificate by following the link below.</p>
-        <a id="certificate" href = "https://drive.google.com/file/d/1IsG1RlknlMQgh2-QD6yDjcYp6EMT0XFQ/view?usp=drive_link">Java Certification</a> 
-        </div>
+  </header>
 
-    <!--What I have done so far-->    
-
-
-    <!--------------------About section-------------------------->
-    <section class="secondSection" id="container2">
-        <div class="container">
-    <div id="about">
-        
-    <div class="box">
-        <h1>About Me</h1>
-        <p>Hi, I'm Astik Dwivedi, a passionate Frontend Developer currently pursuing a degree in Computer Science Engineering. I have a strong foundation in HTML, CSS, JavaScript, and Java. My journey in the tech world has been driven by a love for creating dynamic, user-friendly web experiences, and my goal is to evolve into a Full Stack Web Developer.
-        </p><br>
-       <p>When I'm not coding, you can find me enjoying a thrilling go-kart race, hitting the badminton courts, or diving into a good book—especially ones grounded in reality.
-       </p><br>
-       <p>I'm excited about the future and ready to take on new challenges, constantly aiming to blend creativity with technology in every project I work on.
-        </p>
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="container home-content">
+      <div class="text-content">
+        <h1>Hi, I'm <span>Astik</span></h1>
+        <h2>Frontend Developer</h2>
+        <p>Crafting responsive and engaging web experiences with creativity and precision.</p>
+      </div>
+      <img src="static/images/345.jpg" class="profile-pic" alt="Astik Dwivedi">
     </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience">
+    <div class="container">
+      <h2>What I Have Done</h2>
+      <p>I have successfully completed my Java certification.</p>
+      <a href="https://drive.google.com/file/d/1IsG1RlknlMQgh2-QD6yDjcYp6EMT0XFQ/view?usp=drive_link" class="btn">View Certification</a>
     </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Astik Dwivedi, a Frontend Developer currently pursuing Computer Science Engineering. I specialize in HTML, CSS, JavaScript, and Java. I'm passionate about building dynamic, user-friendly web experiences and aim to become a Full Stack Developer.</p>
+      <p>Outside of coding, I enjoy go-karting, playing badminton, and reading non-fiction books.</p>
     </div>
-    </section>
-<!--------------ABOUT SECTION-------------------->
+  </section>
 
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><label>HTML</label><div class="bar"><div class="fill" style="width: 90%">90%</div></div></div>
+        <div class="skill"><label>CSS</label><div class="bar"><div class="fill" style="width: 80%">80%</div></div></div>
+        <div class="skill"><label>JavaScript</label><div class="bar"><div class="fill" style="width: 75%">75%</div></div></div>
+        <div class="skill"><label>Java</label><div class="bar"><div class="fill" style="width: 70%">70%</div></div></div>
+        <div class="skill"><label>C</label><div class="bar"><div class="fill" style="width: 82%">82%</div></div></div>
+        <div class="skill"><label>DSA</label><div class="bar"><div class="fill" style="width: 50%">50%</div></div></div>
+      </div>
+    </div>
+  </section>
 
-<!-------------------SKILLS------------------->
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Let's connect! Reach out for collaboration, projects, or just to say hello.</p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/astik-dwivedi-589a35323/" target="_blank">LinkedIn</a>
+        <a href="mailto:astikdwivedi2067@gmail.com">Email</a>
+        <a href="https://github.com/Astik99">GitHub</a>
+      </div>
+      <form action="https://formspree.io/f/mbldaaza" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
 
-    <section class="skillsSection" id="skill">
-        <h1>Skills <Section></Section></h1>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;">85%</div>
-                </div>
-            </div>
-    
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;">80%</div>
-                </div>
-            </div>
-    
-            <div class="skill">
-                <h3>JAVASCRIPT</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;">65%</div>
-                </div>
-            </div>
-    
-            <div class="skill">
-                <h3>JAVA</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;">60%</div>
-                </div>
-            </div>
-    
-            <div class="skill">
-                <h3>C</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;">82%</div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>DATA STRUCTURE AND ALGORITHM</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;">50%</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-------------------Contactme-------------------->
-
-    <section id="contact" class="contactSection">
-        <h1>Contact Me</h1>
-        <p>Let's connect! Feel free to reach out for any kind of inquiries.</p>
-    
-        <div class="contact-info">
-            <a href="https://www.linkedin.com/in/astik-dwivedi-589a35323/" target="_blank" class="contact-link">
-                <img src="https://freelogopng.com/images/all_img/1656994981linkedin-icon-png.png" alt="LinkedIn"> LinkedIn
-            </a>
-            <a href="mailto:astikdwivedi2067@gmail.com" class="contact-link">
-                <img src="https://static.vecteezy.com/system/resources/previews/022/484/516/original/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Gmail"> Gmail
-            </a>
-             <a href="https://github.com/Astik99" class="contact-link">
-                <img src="https://pngimg.com/uploads/github/github_PNG58.png" alt="Github"> Github
-            </a>
-        </div>
-    
-        <form action="https://formspree.io/f/mbldaaza" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!---------------------Contactme---------------------->
-
-<script src="script.js">
-  document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (this.getAttribute('href').startsWith("#")) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-            }
-        });
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
     });
-</script>
- 
-
+  </script>
 </body>
-</html> 
+</html>
